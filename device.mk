@@ -411,8 +411,7 @@ PRODUCT_PACKAGES += \
     thermal.msm8953
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/thermal-engine-sanders.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine.conf \
-    $(LOCAL_PATH)/configs/thermal-engine-sanders-INDIA.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine-INDIA.conf
+    $(LOCAL_PATH)/configs/thermal-engine-albus.conf:system/vendor/etc/thermal-engine.conf
 
 # USB HAL
 PRODUCT_PACKAGES += \
