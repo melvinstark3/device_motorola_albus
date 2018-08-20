@@ -269,6 +269,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     MotoActions
 
+# ModService
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/whitelist_modservice.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sysconfig/whitelist_modservice.xml
+
 # Netutils
 PRODUCT_PACKAGES += \
     android.system.net.netd@1.0 \
