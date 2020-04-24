@@ -46,4 +46,4 @@ BUILD_FINGERPRINT := google/crosshatch/crosshatch:9/PQ1A.190105.004/5148680:user
 VENDOR_BUILD_FINGERPRINT := google/crosshatch/crosshatch:9/PQ1A.190105.004/5148680:user/release-keys
 
 # for specific
-$(call inherit-product, vendor/motorola/sanders/sanders-vendor.mk)
+$(call inherit-product, vendor/motorola/albus/albus-vendor.mk)
