@@ -19,8 +19,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_n_mr1.mk)
 
-# Inherit from sanders device
-$(call inherit-product, device/motorola/sanders/device.mk)
+# Inherit from albus device
+$(call inherit-product, device/motorola/albus/device.mk)
 
 # Inherit some cmmon arrow stuff.
 $(call inherit-product, vendor/arrow/config/common.mk)
@@ -30,16 +30,16 @@ TARGET_SCREEN_WIDTH := 1080
 TARGET_SCREEN_HEIGHT := 1920
 
 ## Device identifier. This must come after all inclusions
-PRODUCT_DEVICE := sanders
-PRODUCT_NAME := arrow_sanders
+PRODUCT_DEVICE := albus
+PRODUCT_NAME := arrow_albus
 PRODUCT_BRAND := motorola
 PRODUCT_MANUFACTURER := motorola
 
 PRODUCT_SYSTEM_PROPERTY_BLACKLIST := ro.product.model
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRODUCT_NAME="Moto G (5S) Plus" \
-    PRIVATE_BUILD_DESC="sanders-user 8.1.0 OPS28.65-36 9fea release-keys"
+    PRODUCT_NAME="Moto Z2 Play" \
+    PRIVATE_BUILD_DESC="9 PPS29.133-30 ab8b4 release-keys"
 
 # FINGERPRINT
 BUILD_FINGERPRINT := google/crosshatch/crosshatch:9/PQ1A.190105.004/5148680:user/release-keys

@@ -1,5 +1,5 @@
 #
-# vendor props for sanders
+# vendor props for albus
 #
 
 # Audio
@@ -344,7 +344,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.sensors.scrn_ortn=false \
     ro.vendor.sensors.pedometer=false \
     ro.vendor.sensors.glance_approach=false \
-    ro.hardware.sensors=sanders
+    ro.hardware.sensors=albus
 
 #Trim properties
 PRODUCT_PROPERTY_OVERRIDES += \

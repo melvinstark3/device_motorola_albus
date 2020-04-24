@@ -14,9 +14,9 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
--include vendor/motorola/sanders/BoardConfigVendor.mk
+-include vendor/motorola/albus/BoardConfigVendor.mk
 
-DEVICE_PATH := device/motorola/sanders
+DEVICE_PATH := device/motorola/albus
 
 TARGET_SPECIFIC_HEADER_PATH := $(DEVICE_PATH)/include
 
@@ -48,7 +48,7 @@ TARGET_2ND_CPU_VARIANT := cortex-a53
 TARGET_USES_64_BIT_BINDER := true
 
 # Asserts
-TARGET_OTA_ASSERT_DEVICE := sanders,sanders_retail
+TARGET_OTA_ASSERT_DEVICE := albus,albus_retail
 
 # GPS
 TARGET_NO_RPC := true
@@ -68,8 +68,8 @@ BOARD_DTBTOOL_ARGS := --force-v3 --motorola 1
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x01000000 --tags_offset 0x00000100
 TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_HEADER_ARCH := arm64
-TARGET_KERNEL_CONFIG := sanders_defconfig
-TARGET_KERNEL_SOURCE := kernel/motorola/msm8953
+TARGET_KERNEL_CONFIG := albus_defconfig
+TARGET_KERNEL_SOURCE := kernel/motorola/albus
 TARGET_KERNEL_CLANG_COMPILE := true
 TARGET_KERNEL_CROSS_COMPILE_PREFIX := aarch64-linux-android-
 TARGET_KERNEL_CLANG_PATH := $(PWD)/prebuilts/clang/host/$(HOST_OS)-x86/clang-r353983d/bin
@@ -262,5 +262,5 @@ WIFI_DRIVER_FW_PATH_P2P          := "p2p"
 WPA_SUPPLICANT_VERSION           := VER_0_8_X
 
 # Security patch level
-VENDOR_SECURITY_PATCH := 2019-04-01
+VENDOR_SECURITY_PATCH := 2019-09-01
 

@@ -19,11 +19,11 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit from potter device
-$(call inherit-product, device/motorola/sanders/device.mk)
+$(call inherit-product, device/motorola/albus/device.mk)
 
 # Device identifier. This must come after all inclusions
-PRODUCT_DEVICE := sanders
-PRODUCT_NAME := full_sanders
+PRODUCT_DEVICE := albus
+PRODUCT_NAME := full_albus
 
 # for specific
-$(call inherit-product, vendor/motorola/sanders/sanders-vendor.mk)
+$(call inherit-product, vendor/motorola/albus/albus-vendor.mk)

@@ -17,7 +17,7 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 
 # Vendor properties
--include device/motorola/sanders/vendor_prop.mk
+-include device/motorola/albus/vendor_prop.mk
 
 # These are the hardware-specific features
 PRODUCT_COPY_FILES += \
@@ -239,7 +239,7 @@ PRODUCT_PACKAGES += \
 # Lights
 PRODUCT_PACKAGES += \
     android.hardware.light@2.0-impl \
-    android.hardware.light@2.0-service.sanders
+    android.hardware.light@2.0-service.albus
 
 # Media
 PRODUCT_PACKAGES += \
@@ -353,7 +353,7 @@ PRODUCT_PACKAGES += \
     init.mmi.usb.rc \
     init.qcom.rc \
     init.qcom.sensors.sh \
-    init.sanders.rc \
+    init.albus.rc \
     init.spectrum.rc \
     init.spectrum.sh
 
@@ -420,7 +420,7 @@ PRODUCT_PACKAGES += \
 
 # USB
 PRODUCT_PACKAGES += \
-    android.hardware.usb@1.0-service.sanders
+    android.hardware.usb@1.0-service.albus
 
 # Vibrator
 PRODUCT_PACKAGES += \
@@ -462,7 +462,7 @@ PRODUCT_PACKAGES += \
     WCNSS_wlan_dictionary.dat
 
 PRODUCT_COPY_FILES += \
-    kernel/motorola/msm8953/drivers/staging/prima/firmware_bin/WCNSS_cfg.dat:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/prima/WCNSS_cfg.dat \
+    kernel/motorola/albus/drivers/staging/prima/firmware_bin/WCNSS_cfg.dat:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/prima/WCNSS_cfg.dat \
     $(LOCAL_PATH)/wifi/hostapd.accept:system/etc/hostapd/hostapd.accept \
     $(LOCAL_PATH)/wifi/hostapd.deny:system/etc/hostapd/hostapd.deny \
     $(LOCAL_PATH)/wifi/hostapd_default.conf:system/etc/hostapd/hostapd_default.conf \

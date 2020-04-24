@@ -14,5 +14,5 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-	$(LOCAL_DIR)/arrow_sanders.mk
+	$(LOCAL_DIR)/arrow_albus.mk
 
